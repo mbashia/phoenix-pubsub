@@ -31,6 +31,7 @@ defmodule Shit.Tasks do
     {:ok, text}
   end
 
+  def publish({:error, _changeset} = error, _tag), do: error
 
   @doc """
   Gets a single task.
